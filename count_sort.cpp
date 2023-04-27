@@ -13,7 +13,7 @@ void count_sort(vector<int>& v) {
 			pos.push_back(pos_max < e ? pos_max = e : e);
 	abs_count_sort(neg, neg_max);
 	abs_count_sort(pos, pos_max);
-	for (int i = 0; i < (int) neg.size(); ++i)
+	for (int i = 0; neg.size(); ++i)
 		v[i] = -neg.back(), neg.pop_back();
 	for (int i = v.size() - pos.size(), j = 0; i < (int) v.size(); ++i, ++j)
 		v[i] = pos[j];
