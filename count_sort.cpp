@@ -15,8 +15,8 @@ void count_sort(vector<int>& v) {
 	abs_count_sort(pos, pos_max);
 	for (int i = 0; neg.size(); ++i)
 		v[i] = -neg.back(), neg.pop_back();
-	for (int i = v.size() - pos.size(), j = 0; i < (int) v.size(); ++i, ++j)
-		v[i] = pos[j];
+	for (int i = v.size(); pos.size(); )
+		v[--i] = pos.back(), pos.pop_back();
 }
 
 static void abs_count_sort(vector<int>& v, int max_value) {
