@@ -22,8 +22,8 @@ void count_sort(vector<long> &v) {
 
 static void abs_count_sort(vector<long> &v, size_t max_value) {
 	vector<long> cnt(max_value+1);
-	for (auto &e: v) { cnt[e]+=1; }
+	for (auto &e: v) { cnt[e] += 1; }
 	for (size_t i=0, j=0; i<=max_value; ++i) {
-		while (cnt[i]--) { v[j++]=i; }
+		while (cnt[i]--) { v[j++] = i; }
 	}
 }
