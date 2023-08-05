@@ -14,7 +14,7 @@ void merge_sort(vector<long> &v) {
 			while (l<ll || r<rr) {
 				if (l<ll && r<rr) {
 					vv[seq&1][i++] = (vv[!(seq&1)][l] < vv[!(seq&1)][r] ? vv[!(seq&1)][l++] : vv[!(seq&1)][r++]);
-				} else if (l < ll) {
+				} else if (l<ll) {
 					vv[seq&1][i++] = vv[!(seq&1)][l++];
 				} else {
 					vv[seq&1][i++] = vv[!(seq&1)][r++];
