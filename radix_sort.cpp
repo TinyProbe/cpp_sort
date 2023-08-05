@@ -36,7 +36,7 @@ static void abs_radix_sort(vector<queue<long>> &qvec, size_t max_value) {
 				qvec[val/div%base].push(val);
 			}
 		}
-		if (div>max_value) { break; }
-		div*=base;
+		if (div > max_value) { break; }
+		div *= base;
 	}
 }
