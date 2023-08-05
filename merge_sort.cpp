@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void merge_sort(vector<int>& v) {
+void merge_sort(vector<long> &v) {
 	int seq = 1, n = v.size();
 	vector<vector<int>> vv(2);
 	vv[0] = std::move(v);
