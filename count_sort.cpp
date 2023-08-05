@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-static void abs_count_sort(vector<int> &v, size_t max_value);
+static void abs_count_sort(vector<long> &v, size_t max_value);
 
 void count_sort(vector<long> &v) {
 	vector<long> neg, pos;
